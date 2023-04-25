@@ -1,0 +1,7 @@
+v 4
+file . "norgate_tb.vhdl" "bc94e0fa3fc737fd4351bb722b1d6e7c38ce2dc6" "20230419193914.917":
+  entity norgate_tb at 1( 0) + 0 on 13;
+  architecture test of norgate_tb at 6( 86) + 0 on 14;
+file . "norgate.vhdl" "2bf38b822f3bf5b0114b399fc051d19629c5add4" "20230419193914.718":
+  entity norgate at 1( 0) + 0 on 11;
+  architecture rtl of norgate at 12( 177) + 0 on 12;

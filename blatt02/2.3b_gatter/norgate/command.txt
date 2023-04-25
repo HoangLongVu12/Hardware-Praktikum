@@ -1,0 +1,1 @@
+python vhdl_script.py norgate.vhdl norgate_tb.vhdl

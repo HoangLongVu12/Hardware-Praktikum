@@ -1,0 +1,7 @@
+v 4
+file . "xnorgate_tb.vhdl" "94f3fdfb8445a01fb07f96ffc490b8c7e13cbbc6" "20230419194157.050":
+  entity xnorgate_tb at 1( 0) + 0 on 13;
+  architecture test of xnorgate_tb at 6( 88) + 0 on 14;
+file . "xnorgate.vhdl" "9406733d121acf0b962c3dcf826b987cd178693e" "20230419194156.830":
+  entity xnorgate at 1( 0) + 0 on 11;
+  architecture rtl of xnorgate at 12( 189) + 0 on 12;

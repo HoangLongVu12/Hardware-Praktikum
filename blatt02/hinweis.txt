@@ -1,0 +1,13 @@
+Die grundlegenden Struktur der Abgabe ist in den Unterverzeichnissen angelegt. Diese enthalten die vorgegeben Dateien für die entsprechenden Teilaufgaben. Diese müssen/sollen zum Teil verändert und weitere Dateien angelegt werden. 
+
+Aufgabe 2.1c: Hier genügt es, die Datei signals_tb.vhdl zu verändern.
+
+Aufgabe 2.3b: Die Dateien andgate.vdhl und andgate_tb.vdhl sind als Vorlage für die 5 anderen Gatter vorgegeben. Insgesamt sollen hier 10 weitere Dateien erstellt werden, 5 Gatter und 5 zugehörige Testbenches. Verwenden Sie dabei die gleiche Namenskonvention, zum Beispiel orgate.vhdl und orgate_tb.vdhl für das OR-Gatter. Die entsprechenden Kommandos zum ausführen können in der Datei command.txt in 5 weiteren Zeilen angegeben werden.
+
+Aufgabe 2.3d: Hier soll die Datei andgate.vhdl angepasst werden. Die Datei andgate_tb.vhdl kann ebenfalls as Basis verwendet werden, muss aber entsprechend angepasst werden.
+
+Aufgabe 2.3e: Hier sollen die in 2.2d erstellten/veränderten Dateien kopiert und weiter angepasst werden.
+
+Die anderen (Teil-) Aufgaben sollen in der PDF bearbeitet werden.
+
+Denken Sie daran, Ihre vhdl Datein wo nötig zu kommentieren und zu überprüfen, ob diese kompilierbar sind!

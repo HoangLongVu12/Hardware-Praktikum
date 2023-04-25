@@ -1,0 +1,1 @@
+python vhdl_script.py signals_tb.vhdl
