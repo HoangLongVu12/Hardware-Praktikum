@@ -1,0 +1,14 @@
+Die grundlegenden Struktur der Abgabe ist in den Unterverzeichnissen angelegt. Diese enthalten die vorgegeben Dateien für die entsprechenden Teilaufgaben. Diese müssen/sollen zum Teil verändert und weitere Dateien angelegt werden. 
+
+Aufgabe 0.1: Hier sollen die Dateien notgate.vhdl, notgate_tb.vhdl und command.txt erstellt werden.
+
+Aufgabe 0.2: Hier sollen die Dateien andgate.vhdl, andgate_tb.vhdl und command.txt erstellt werden.
+
+Aufgabe 0.3: Hier sollen die Dateien nandgate.vhdl und command.txt erstellt werden. Außerdem werden die Dateien notgate.vhdl und andgate.vhdl aus den beiden vorherigen Aufgaben benötigt.
+
+Die anderen (Teil-) Aufgaben sollen in der PDF bearbeitet werden.
+
+Denken Sie daran, Ihre vhdl Datein wo nötig zu kommentieren und zu überprüfen, ob diese kompilierbar sind!
+
+
+HINWEIS: Da es sich hier um eine Beispielabgabe handelt, sind alle hier geforderten Dateien bereits erstellt. Diese Datei soll nur verdeutlichen, wie die hinweis.txt Dateien grundsätzlich aufgebaut sind.

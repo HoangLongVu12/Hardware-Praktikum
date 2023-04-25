@@ -1,0 +1,13 @@
+v 4
+file . "nandgate.vhdl" "cde6473c637d2ccb1ef49a41c6fa91f7ee684834" "20220407230924.536":
+  entity nandgate at 4( 192) + 0 on 27;
+  architecture rtl of nandgate at 15( 374) + 0 on 28;
+file . "andgate.vhdl" "ae32be251f5c06832e0aaf251798063dbc2955bd" "20220407230924.496":
+  entity andgate at 5( 237) + 0 on 25;
+  architecture rtl of andgate at 29( 1050) + 0 on 26;
+file . "nandgate_tb.vhdl" "74fb61a26930261e01d2563de88b0b87c633822c" "20220407230924.577":
+  entity nandgate_tb at 1( 0) + 0 on 29;
+  architecture test of nandgate_tb at 9( 193) + 0 on 30;
+file . "notgate.vhdl" "8c87a7b5f4c68caac919875f23be15a86ec21091" "20220407230924.452":
+  entity notgate at 10( 520) + 0 on 23;
+  architecture rtl of notgate at 38( 1625) + 0 on 24;

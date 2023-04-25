@@ -1,0 +1,4 @@
+v 4
+file . "notgate_tb.vhdl" "33d54bf5dd32465f3e75458b1b730caad65462dc" "20230411132754.516":
+  entity notgate_tb at 1( 0) + 0 on 11;
+  architecture test of notgate_tb at 12( 337) + 0 on 12;
