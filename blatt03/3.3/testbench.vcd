@@ -1,0 +1,216 @@
+$date
+  Thu Apr 27 13:46:37 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module cla_tb $end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " b[3:0] $end
+$var reg 1 # cin $end
+$var reg 1 $ cout $end
+$var reg 4 % sum[3:0] $end
+$scope module cladder $end
+$var reg 4 & a[3:0] $end
+$var reg 4 ' b[3:0] $end
+$var reg 1 ( cin $end
+$var reg 1 ) cout $end
+$var reg 4 * sum[3:0] $end
+$var reg 4 + p[3:0] $end
+$var reg 4 , g[3:0] $end
+$var reg 4 - c[3:0] $end
+$var reg 1 . pout $end
+$var reg 1 / gout $end
+$scope module facla0 $end
+$var reg 1 0 a $end
+$var reg 1 1 b $end
+$var reg 1 2 cin $end
+$var reg 1 3 g $end
+$var reg 1 4 p $end
+$var reg 1 5 sum $end
+$var reg 1 6 mittel $end
+$upscope $end
+$scope module facla1 $end
+$var reg 1 7 a $end
+$var reg 1 8 b $end
+$var reg 1 9 cin $end
+$var reg 1 : g $end
+$var reg 1 ; p $end
+$var reg 1 < sum $end
+$var reg 1 = mittel $end
+$upscope $end
+$scope module facla2 $end
+$var reg 1 > a $end
+$var reg 1 ? b $end
+$var reg 1 @ cin $end
+$var reg 1 A g $end
+$var reg 1 B p $end
+$var reg 1 C sum $end
+$var reg 1 D mittel $end
+$upscope $end
+$scope module facla3 $end
+$var reg 1 E a $end
+$var reg 1 F b $end
+$var reg 1 G cin $end
+$var reg 1 H g $end
+$var reg 1 I p $end
+$var reg 1 J sum $end
+$var reg 1 K mittel $end
+$upscope $end
+$scope module clag0 $end
+$var reg 4 L gin[3:0] $end
+$var reg 4 M pin[3:0] $end
+$var reg 1 N cin $end
+$var reg 4 O cout[3:0] $end
+$var reg 1 P pout $end
+$var reg 1 Q gout $end
+$var reg 1 R z1 $end
+$var reg 1 S z2 $end
+$var reg 1 T z3 $end
+$var reg 1 U z4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b1001 !
+b0101 "
+0#
+0$
+b1110 %
+b1001 &
+b0101 '
+0(
+0)
+b1110 *
+b1101 +
+b0001 ,
+b0001 -
+0.
+0/
+10
+11
+02
+13
+14
+05
+06
+07
+08
+19
+0:
+0;
+1<
+0=
+0>
+1?
+0@
+0A
+1B
+1C
+1D
+1E
+0F
+0G
+0H
+1I
+1J
+1K
+b0001 L
+b1101 M
+0N
+b0001 O
+0P
+0Q
+1R
+0S
+0T
+0U
+#10000000
+b0000 !
+b0001 "
+b0001 %
+b0000 &
+b0001 '
+b0001 *
+b0001 +
+b0000 ,
+b0000 -
+00
+03
+15
+16
+09
+0<
+0?
+0B
+0C
+0D
+0E
+0I
+0J
+0K
+b0000 L
+b0001 M
+b0000 O
+0R
+#20000000
+b0011 !
+b0010 "
+b0101 %
+b0011 &
+b0010 '
+b0101 *
+b0011 +
+b0010 ,
+b0010 -
+10
+01
+17
+18
+1:
+1;
+1@
+1C
+b0010 L
+b0011 M
+b0010 O
+1S
+#30000000
+b1010 !
+b0110 "
+1$
+b0000 %
+b1010 &
+b0110 '
+1)
+b0000 *
+b1110 +
+b1110 -
+1/
+00
+04
+05
+06
+1?
+1B
+0C
+1D
+1E
+1G
+1I
+0J
+1K
+b1110 M
+b1110 O
+1Q
+1T
+1U
+#40000000

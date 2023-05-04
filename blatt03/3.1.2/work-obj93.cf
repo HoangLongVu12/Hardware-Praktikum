@@ -1,0 +1,7 @@
+v 4
+file . "fa_tb.vhdl" "57975e59731e5d18f08d14d474386fb1301ed1d2" "20230425175302.723":
+  entity fa_tb at 1( 0) + 0 on 13;
+  architecture test of fa_tb at 7( 72) + 0 on 14;
+file . "fa.vhdl" "d712e710593a1a065ebf33f26f440f13e61a5650" "20230425175302.603":
+  entity fa at 1( 0) + 0 on 11;
+  architecture rtl of fa at 14( 198) + 0 on 12;

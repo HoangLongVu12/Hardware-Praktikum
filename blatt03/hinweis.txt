@@ -1,0 +1,13 @@
+Die grundlegenden Struktur der Abgabe ist in den Unterverzeichnissen angelegt. Diese enthalten die vorgegeben Dateien für die entsprechenden Teilaufgaben. Diese müssen/sollen zum Teil verändert und weitere Dateien angelegt werden. 
+
+Aufgabe 3.1.1b: Hier sind die Dateien ha.vhdl und ha_tb.vhdl zu verändern.
+
+Aufgabe 3.1.2b: Hier sind die Dateien fa.vhdl und fa_tb.vhdl zu verändern. Außerdem muss, je nach gewählter Implementierung, eventuell die Datei ha.vhdl hinzugefügt sowie die command.txt verändert werden.
+
+Aufgabe 3.2: Hier sind die Dateien rca.vhdl und rca_tb.vhdl sowie die command.txt zu verändern. Außerdem müssen eventuell die Dateien ha.vhdl und/oder fa.vhdl hinzugefügt werden. 
+
+Aufgabe 3.3b: Hier sind die Dateien clag.vhdl, facla.vhdl und cla.vhdl sowie die command.txt zu verändern. Außerdem müssen die Testbenches Dateien clag_tb.vhdl, facla_tb.vhdl und cla_tb.vhdl erstellt werden.
+
+Die anderen (Teil-) Aufgaben sollen in der PDF bearbeitet werden.
+
+Denken Sie daran, Ihre vhdl Dateien wo nötig zu kommentieren und zu überprüfen, ob diese kompilierbar sind wenn sie den Kompilierbefehl in der jeweiligen command.txt Datei ausführen!
