@@ -1,0 +1,13 @@
+Die grundlegenden Struktur der Abgabe ist in den Unterverzeichnissen angelegt. Diese enthalten die vorgegeben Dateien für die entsprechenden Teilaufgaben. Diese müssen/sollen zum Teil verändert und weitere Dateien angelegt werden. 
+
+Aufgabe 4.0: Enthält ein einfaches Beispiel für die Verwendung von Eingabe- und Ausgabevektoren. 
+
+Aufgabe 4.1: Hier sind die Dateien mux41.vhdl und mux41_tb.vhdl sowie mux81.vhdl und mux81_tb.vhdl zu verändern. Außerdem müssen, je nach gewählter Implementierung für den mux81, eventuell weitere Dateien hinzugefügt werden. Die Datei command.txt muss um den Befehl zur Kompilierung des mux81 und der zugehörigen Testbench ergänzt weredn.
+
+Aufgabe 4.2: Hier sind die Dateien demux14.vhdl und demux14_tb.vhdl zu verändern. Außerdem sollen weitere Dateien erstellt oder hinzugefügt werden, die dann ebenfalls kompiliert werden müssen. In diesem Fall muss die Datei command.txt verändert werden.
+
+Aufgabe 4.3: Hier sind die Dateien encoder42.vhdl und encoder42_tb.vhdl zu verändern. Falls weitere Dateien erstellt oder hinzugefügt werden, muss die Datei command.txt verändert werden.
+
+Für jede der Aufgaben 4.1-4.3 sind Teilaufgaben in der PDF zu bearbeiten.
+
+Denken Sie daran, Ihre vhdl Dateien wo nötig zu kommentieren und zu überprüfen, ob diese kompilierbar sind wenn sie den Kompilierbefehl in der jeweiligen command.txt Datei ausführen!
