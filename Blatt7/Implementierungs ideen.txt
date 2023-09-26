@@ -1,0 +1,100 @@
+
+Die Punkte stehen eigentlich zur Diskussion aus...
+
+1. Persönnliche Ablage
+
+	Eigentlich hatten wir das als Liste "display" der Entity Player realisiert. Das ist ausreichend, 
+	um die Kärtchen zu verwalten. Z.B. um zu prüfen, ob eine Stelle frei ist, geht man diese Liste 
+	durch und wenn ein Kärtchen dieselbe Stelle beansprucht, ist die Stelle belegt.
+	
+	Um zu prüfen, ob Nachbarstelle belegt ist (Ablegen bei x,y ist erlaubt), geht men die Liste durch
+	und wenn die Positionen (x,y+1), (x,y-1), (x+1,y), (x-1,y) von irgendeinem Kärtchen belegt ist
+	aber die Position (x,y) bei keiner, darf man ein neues Kärtchen da ablegen.
+	
+	Das Erfüllen von Pfeilen ist ännlich. Wenn ein Kärtchen auf der Position (x,y) abgelegt wird,
+	geht man alle anderen durch und falls diese auf derselben zeile, spalte, diagonale liegen, prüft
+	man, ob diese ein Pfeil hat, welches im selben Element ist, auf x,y zeigt und noch nicht erfüllt
+	ist.
+
+	Die Implementierung ist eigentlich einfach und braucht maximal 35 Iterationen, da jeder Spieler
+	maximal 36 Kärtchen haben kann. Allerdings kann es passieren, dass man diese Funktionen für
+	jedes Feld aufrufen will. Es kann maximal 36^2 der Felder geben, also 1296 Aufrufe.	
+	
+	Aus dem Grund kann es schon Sinn machen, die Ablage mit einer eigenen Datenstruktur zu realisieren,
+	welche die Kärtchen in einem 2D Feld verwaltet. Serviceschicht ist aber Zustandslos, das heißt 
+	jedes Mal wenn der Spieler gewechselt wird, muss die Serviceschicht dieses Feld leeren und für
+	den neuen Spieler aufs neue aufbauen.
+	
+	Aus diesem Grund kann es sinn machen, die Feldstruktur in der Entityschicht zu implementieren 
+	und z.B. dem Spieler zuzuweisen. Dann wird diese bei jedem Zug erweitert aber nicht immer wieder
+	aufs neue aufgebaut. Die Verwaltung wird etwas tricky sein, man muss dynamisch neue Zeilen und
+	Spalten hinzufügen können.
+	
+	Ein 2D Feld kann man z.B. als ArrayList<ArrayList<Tile?>> definieren, vermuttlich. Es wird aber
+	jede Menge freie Stellen haben, die noch null enthalten.
+	
+	Im Moment bin ich aber für die Lineare Liste ohne 2D Array noch, nur muss man aufpassen, die 
+	Anzahl Aufrufe	niedrig zu halten und z.B. nicht den gesammten Bereich abzuscannen, sondern nur 
+	Nachbarzellen von Kärtchen.
+
+2. Nutzen/Kosten einer Karte (costs & gains)
+
+	Kosten: Anzahl von Scheiben, die auf die Karte abgelegt werden müssen, minus Anzahl von Scheiben,
+		die durch Erfüllung von Karten frei werden (inklusive der Karte selbst, wenn sie sofort erfüllt 
+		wird). Wenn negativ, wurden mehr Scheiben befreiht, als auf die abgelegte Karte gelegt wird.
+		
+	Direkter Nutzen: Anzahl der Punkte, die der Spieler bekommt (durch Erfüllung von Karten).
+		Kann nicht negativ sein, negative Punkte werden unter Kosten verbucht.
+
+	Strategische Nutzen: Nutzen, die nicht unmittelbar eine Wirkung haben. Besonders für KI wichtig, 
+		müsste aber auch dem menschlicher Spieler angezeigt werden. Evtl. kann man daraus einen 
+		'Assistenten' machen,	der bei Auswahl einer Karte diese Nutzen anzeigt und bei dem man 
+		bestimmte Berechnungen ab- und zuschaltbar machen kann. Wenn diese Information auch dem menschlichen 
+		Spieler zur Verfügung steht, nutzt die KI "keine Vorteile gegenüber menschlichen Spielern" aus.
+		
+		a) Anzahl Pfeile, die durch Ablegen der Karte gelöst werden. Gewichtet mit dem Kartenwert:
+			1 Pfeil - Karte sofort erfüllt, 0 Punkte pro Pfeil, da dies bereits verbucht wurde.
+			2 Pfeile - 1 Punkt pro Pfeil.
+			3 Pfeile - 2 Punkte pro Pfeil.
+			4 Pfeile - 2.5 Punkte pro Pfeil.
+			
+		b) Freie Stellen, auf die ein oder mehr Pfeile in einer Farbe zeigen. Diese Pfeile werden gelöst, 
+			wenn dort später eine Karte in dieser Farbe abgelegt wird. Jeder dieser Pfeile kann also durch 
+			eine oder mehrere freie Stellen in Zukunft gelöst werden. Wir gewichten jeden freien Pfeil 
+			fast wie in a),	nur hier wird bei einer Karte mit nur einem Pfeil auch 1 Punkt pro Pfeil berechnet.
+			
+			Gesucht wird die kleinste Anzahl aller freien Felder, die alle verbliebene freie Pfeile auf 
+			dem	Spielfeld lösen. Man kann hier so vorgehen: Jeder Pfeil kann durch irgendein freies Feld 
+			gelöst werden, also ist die Anzahl zunächst die Anzahl der Pfeile. Dann sucht man nach freien 
+			Feldern, auf die mehrere freie Pfeile gleicher Farbe zeigen. Jeder Fund reduziert die berechnete 
+			Anzahl und markiert zeigende Pfeile als betrachtet, um den aus der weiteren Suche auszuschließen.
+			
+			Die Summe der Pfeilgewichtete geteilt durch die gefundene Anzahl freier Felder ergibt das 
+			'Potential' des Spielfeldes. Je höher der Wert ist, um so weniger Karten braucht man, um die 
+			verbliebene Pfeile zu lösen. Das Potential ändert sich durch Hinzufügen und Rotation einer 
+			Karte. Die Änderung dieses Potentials ergibt also den (potentiellen) Nutzen der Karte.
+			
+			Das ist bisshen kompliziert zu berechnen aber könnte eine gute Entscheidungsgrundlage für eine KI
+			oder menschliche Spieler werden.
+			
+		c) Eine Karte auf dem Angebot-, Intermezzo- und Nahczienstappel hat auch einen Nutzen für Mitspieler. 
+			Der höchste Nutzen unter den Mitspielern wird berechnet. Das erlaubt vielleicht ein aggressives 
+			Konkurrenzspiel der KI zu realisieren. Man muss dazu aber Kosten und Nutzen über Ablage anderer 
+			Spieler berechnen können.
+		
+	Man kann versuchen, all diese Werte berechnen und dann Varianten der KI erstellen, mit verschiedenen
+	Gewichtungen und dann ein paar hundert Partien diese gegeneinander antreten lassen, um die optimale
+	Gewichtung zu bestimmen.
+
+3. Berechnung von Nutzen/Kosten 
+
+	PlayerService.testPosition(tile: Tile, posX: Int, posY: int, dir: Direction) : CostsGains
+	
+	Die Funktion übernimmt das Kärtchen zum Testen, die Position und Rotation und ermittelt alle Kosten 
+	und	Nutzenwerte, welche in einer Instanz einer Inneren Klasse von PlayerService gespeichert werden.
+	
+	Die GUI ruft die Funktion auf, wenn der Spieler eine Stelle testen möchte. Die Werte werden dann in 
+	der GU entprechend dargestellt.
+	
+	KI ruft diese Funktion ebenfals auf, um eine gute Ablagestelle zu finden. Danach entscheidet sie sich 
+	für die optimale Stelle.
