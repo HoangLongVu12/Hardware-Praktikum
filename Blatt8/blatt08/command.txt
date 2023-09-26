@@ -1,0 +1,2 @@
+python vhdl_script.py ram.vhdl ram_tb.vhdl
+ 

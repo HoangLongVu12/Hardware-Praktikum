@@ -1,0 +1,7 @@
+Bei diesem Übungsblatt gibt es keine Unterverzeichnisse, da alle Implementierungen zu Aufgabe 8.1 gehören. 
+
+Aufgabe 8.1: Die Datei ram.vhdl ist zu verändern. Außerdem soll für Aufgabenteil d eine Testbench angelegt und die command.txt entsprechend angepasst werden. Der Test für Aufgabenteil f findet mit Hilfe der beigefügten Date ram_tb.vhdl statt.  
+
+Für 8.1 und 8.2 sind Teilaufgaben in der PDF zu bearbeiten.
+
+Denken Sie daran, Ihre vhdl Dateien wo nötig zu kommentieren und zu überprüfen, ob diese kompilierbar sind wenn sie den Kompilierbefehl in der jeweiligen command.txt Datei ausführen!
