@@ -1,0 +1,2 @@
+python vhdl_script.py alu.vhdl alu_tb.vhdl
+ 

@@ -1,0 +1,40 @@
+v 4
+file . "mips_tb.vhdl" "759d0fe6c8b60bd929009d082a797643090f5606" "20230627165452.072":
+  entity mips_tb at 1( 0) + 0 on 35;
+  architecture rtl of mips_tb at 7( 82) + 0 on 36;
+file . "syncresff.vhdl" "59009d88a23995c5a8720032d46f4192f8673746" "20230627165451.804":
+  entity syncresff at 4( 177) + 0 on 31;
+  architecture behavior of syncresff at 17( 497) + 0 on 32;
+file . "signext.vhdl" "e259b817ff258e3e0ce3cd577d675736f9ef04d9" "20230627165451.558":
+  entity signext at 4( 177) + 0 on 27;
+  architecture behavior of signext at 14( 369) + 0 on 28;
+file . "mux2.vhdl" "6b798c0ae705e5b43f868dbde871472ef843680d" "20230627165451.311":
+  entity mux2 at 4( 177) + 0 on 23;
+  architecture behavior of mux2 at 17( 432) + 0 on 24;
+file . "datapath.vhdl" "9928297141c949be49daaef4e77fd385138cfb98" "20230627165451.057":
+  entity datapath at 4( 177) + 0 on 19;
+  architecture structure of datapath at 27( 773) + 0 on 20;
+file . "aludec.vhdl" "ec07fe26a4b4b167b1db5363b1154e7d7eae6b4a" "20230627165450.862":
+  entity aludec at 4( 177) + 0 on 15;
+  architecture behavior of aludec at 15( 394) + 0 on 16;
+file . "adder.vhdl" "abdcd03d71c07a454337aa36a18950b56eb30d76" "20230627165450.574":
+  entity adder at 4( 177) + 0 on 11;
+  architecture behavior of adder at 16( 405) + 0 on 12;
+file . "alu.vhdl" "490f5da478d23d8f1ad974c95acb84e18c806c4d" "20230627165450.720":
+  entity alu at 4( 177) + 0 on 13;
+  architecture behavior of alu at 18( 485) + 0 on 14;
+file . "controller.vhdl" "cfa13488f0f2aa2939b3b93a558eae413d55f609" "20230627165450.958":
+  entity controller at 4( 177) + 0 on 17;
+  architecture structure of controller at 23( 611) + 0 on 18;
+file . "maindec.vhdl" "a682f7a7c8ad949f697eaa9f0f78422fc2048f47" "20230627165451.210":
+  entity maindec at 4( 177) + 0 on 21;
+  architecture behavior of maindec at 21( 536) + 0 on 22;
+file . "regfile.vhdl" "142ed9a3adf068c45db49d5d8801992819223516" "20230627165451.415":
+  entity regfile at 4( 177) + 0 on 25;
+  architecture behavior of regfile at 21( 590) + 0 on 26;
+file . "sl2.vhdl" "c1fdb6d3868b632cc0d97fd8354ba64103a2757f" "20230627165451.709":
+  entity sl2 at 4( 177) + 0 on 29;
+  architecture behavior of sl2 at 14( 336) + 0 on 30;
+file . "mips.vhdl" "22e5221c6e36ff4ed5b031b136a80614dbd1c345" "20230627165451.903":
+  entity mips at 4( 177) + 0 on 33;
+  architecture structure of mips at 20( 573) + 0 on 34;

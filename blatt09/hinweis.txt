@@ -1,0 +1,7 @@
+Die Unterverzeichnisse für die einzelnen Aufgabenteile sind bereits angelegt. Welche Aufgabe im welchem Unterverzeichnis zu finden ist können Sie dem Übungsblatt entnehmen.
+
+Instruktion Memory und Data Memory sollen in den Verzeichnissen imem bzw dmem erstellt werden. 
+
+Legen sie bitte außerdem die entsprechenden Testbench Datein so wie die command.txt in den jeweiligen Verzeichnissen an. 
+
+Abhängig vom Betriebssystem kommt es manchmal zu Problemen mit relativen Pfadangaben. Dies kann beim datapath, beim mips selbst sowie bei den Speichern eine Rolle spielen. Im mips Verzeichnis befindet sich daher eine Datei all_steps.sh mit zugehöriger command.text, die alternativ zur vhdl_script.py verwendet werden kann. Eine andere Lösung kann es ebenfalls sein, die benötigten vhdl Dateien direkt in das entsprechende Verzeichnis zu kopieren.  

@@ -1,0 +1,7 @@
+v 4
+file . "Datenspeicher_tb.vhdl" "619da97f75130f9eaad87ac3b74ad80baa651864" "20230627170156.224":
+  entity datenspeicher_tb at 1( 0) + 0 on 13;
+  architecture test of datenspeicher_tb at 8( 111) + 0 on 14;
+file . "Datenspeicher.vhdl" "5edafa5e915ecaa4036214abbd6f90a3471d04f1" "20230627170156.073":
+  entity datenspeicher at 1( 0) + 0 on 11;
+  architecture behave of datenspeicher at 10( 235) + 0 on 12;

@@ -1,0 +1,2 @@
+python vhdl_script.py adder.vhdl alu.vhdl aludec.vhdl controller.vhdl datapath.vhdl maindec.vhdl mux2.vhdl regfile.vhdl signext.vhdl sl2.vhdl syncresff.vhdl mips.vhdl mips_tb.vhdl 
+
