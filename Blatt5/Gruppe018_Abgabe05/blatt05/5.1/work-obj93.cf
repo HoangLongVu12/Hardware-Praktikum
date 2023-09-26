@@ -1,0 +1,19 @@
+v 4
+file . "D_Latch_tb.vhdl" "82dc010102b43d4c8e3577453b2e155cb6e13ff7" "20230518142024.563":
+  entity d_latch_tb at 1( 0) + 0 on 31;
+  architecture testbench of d_latch_tb at 7( 88) + 0 on 32;
+file . "SR_Latch_tb.vhdl" "b16413e175b2e594862d106fd3d5309864e48d83" "20230518190022.802":
+  entity sr_latch_tb at 1( 0) + 0 on 55;
+  architecture testbench of sr_latch_tb at 7( 90) + 0 on 56;
+file . "norgate.vhdl" "8c0a66b9c48b08283b8979282a23812d585c3568" "20230518141305.428":
+  entity norgate at 1( 0) + 0 on 19;
+  architecture rtl of norgate at 12( 186) + 0 on 20;
+file . "SR_Latch.vhdl" "5caa6cac70750aaf9fb5b38d4c1750558a0894b9" "20230518190022.662":
+  entity sr_latch at 1( 0) + 0 on 53;
+  architecture behavioral of sr_latch at 11( 164) + 0 on 54;
+file . "D_Latch.vhdl" "7c039edb1fef4127669ca899a648e9c6ebe5c5f0" "20230518142024.419":
+  entity d_latch at 1( 0) + 0 on 29;
+  architecture behavioral of d_latch at 11( 167) + 0 on 30;
+file . "andgate.vhdl" "1d7cd97e611fd00de7c1eadb921cd6bc23edfd51" "20230518142024.129":
+  entity andgate at 10( 520) + 0 on 25;
+  architecture rtl of andgate at 41( 1848) + 0 on 26;

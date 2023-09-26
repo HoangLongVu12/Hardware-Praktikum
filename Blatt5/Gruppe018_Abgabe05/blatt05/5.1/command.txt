@@ -1,0 +1,2 @@
+python vhdl_script.py SR_Latch.vhdl SR_Latch_tb.vhdl
+python vhdl_script.py SR_Latch.vhdl D_Latch.vhdl D_Latch_tb.vhdl
