@@ -1,0 +1,16 @@
+    q1 <= '0' WHEN reset = '1' ELSE
+        q1i;
+    q0 <= '0' WHEN reset = '1' ELSE
+        q0i;
+
+    j1 <= q1i WHEN c = '0' ELSE
+        (q1i OR (q0i AND (NOT D)));
+
+    k1 <= (NOT q1i) WHEN c = '0' ELSE
+        ((NOT q1i) OR ((NOT q0i) AND D));
+
+    j0 <= q0i WHEN c = '0' ELSE
+        ((NOT q1i) OR (NOT q0i) OR (NOT d));
+
+    k0 <= NOT q0i WHEN c = '0' ELSE
+        ((NOT q1i) OR (NOT q0i));

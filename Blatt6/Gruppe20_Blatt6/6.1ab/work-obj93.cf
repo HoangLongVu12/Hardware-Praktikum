@@ -1,0 +1,10 @@
+v 4
+file . "sipo_register_tb.vhdl" "8f50fd35d3f9a2da0055d22471fbd6ded7c45a98" "20220526114406.451":
+  entity sipo_register_tb at 1( 0) + 0 on 77;
+  architecture rtl of sipo_register_tb at 7( 94) + 0 on 78;
+file . "DFlipFlop.vhdl" "26392b6aab961a158a3ba17f9ccaab2e46a5a435" "20220526114405.903":
+  entity dflipflop at 1( 0) + 0 on 73;
+  architecture behavioral of dflipflop at 11( 169) + 0 on 74;
+file . "sipo_register.vhdl" "5253781746aeb6b554eb87847ff22d438379bb5c" "20220526114406.173":
+  entity sipo_register at 1( 0) + 0 on 75;
+  architecture rtl of sipo_register at 12( 240) + 0 on 76;

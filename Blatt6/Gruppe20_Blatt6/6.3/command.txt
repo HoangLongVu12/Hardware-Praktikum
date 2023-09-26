@@ -1,0 +1,2 @@
+python vhdl_script.py jk_flipflop.vhdl sync_counter.vhdl sync_counter_tb.vhdl
+ 
